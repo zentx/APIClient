@@ -33,7 +33,7 @@ class Characters extends Component{
     }
 
     async componentDidMount() {
-      const API = 'http://jsonplaceholder.typicode.com/posts/' + this.props.match.params.id +'/comments';
+      const API = 'https://jsonplaceholder.typicode.com/posts/' + this.props.match.params.id +'/comments';
       console.log(API);
       this.setState({ loading: true });
         
