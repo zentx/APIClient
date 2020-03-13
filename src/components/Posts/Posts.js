@@ -46,7 +46,7 @@ class MainTable extends Component{
 
     erasePost = (id) => {
       try {
-      axios.delete('http://jsonplaceholder.typicode.com//posts/' + id);
+      axios.delete('https://jsonplaceholder.typicode.com//posts/' + id);
       alert("El elemento fue borrado");
       const url = '/';
       return <Redirect to={url} />
@@ -68,7 +68,7 @@ class MainTable extends Component{
     }
 
     async componentDidMount() {
-      const API = 'http://jsonplaceholder.typicode.com/posts?page=';
+      const API = 'https://jsonplaceholder.typicode.com/posts?page=';
       const DEFAULT_QUERY = '1';
       this.setState({ loading: true });
     
